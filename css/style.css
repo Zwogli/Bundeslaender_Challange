@@ -1,0 +1,92 @@
+/*--------------------------------------------------
+Global
+---------------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.f-bold{
+  font-weight: bold;
+}
+/*--------------------------------------------------
+Content
+---------------------------------------------------*/
+header{
+  display: flex;
+  justify-content: center;
+}
+.headline{
+  width: 100%;
+  max-width: 1024px;
+  background-color: rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  text-transform: uppercase;
+}
+p{
+  font-size: 18px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+}
+.b-card{
+  margin: 5px;
+  padding: 10px;
+  border: 10px solid rgba(0, 0, 0, .2);
+}
+.b-card:hover{
+  cursor: pointer;
+  border: 10px solid rgba(0, 0, 0, .4);
+}
+.bundesland-headline{
+  font-weight: bold
+}
+
+@media(min-width: 500px){
+  main{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .b-card{
+    width: calc(50% - 50px);
+  }
+}
+footer{
+  display: flex;
+}
+.letter{
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letter:hover{
+  cursor: pointer;
+}
+/*--------------------------------------------------
+Media mobile -> desktop
+---------------------------------------------------*/
+@media(min-width: 800px){
+  main{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .b-card{
+    width: calc(33% - 50px);
+  }
+  footer{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
